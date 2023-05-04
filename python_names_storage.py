@@ -27,8 +27,8 @@ try:
   """Uploads a file to the bucket."""
   credentials = service_account.Credentials.from_service_account_info(credentials_dict)
   storage_client = storage.Client(credentials=credentials)
-  bucket = storage_client.get_bucket('artists_names') ### Nome do seu bucket
-  blob = bucket.blob('artist-names.csv')
+  bucket = storage_client.get_bucket('1weather') ### Nome do seu bucket
+  blob = bucket.blob('weatherreza.csv')
 
   pages = []
   names = "Name \n"
